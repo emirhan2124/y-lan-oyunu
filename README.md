@@ -17,29 +17,27 @@ import random
 
 pygame.init()
 
-# Renkler
+
 beyaz = (255, 255, 255)
 yeşil = (0, 255, 0)
 kırmızı = (213, 50, 80)
 mavi = (50, 153, 213)
 siyah = (0, 0, 0)
 
-# Ekran boyutu
 genişlik = 600
 yükseklik = 400  # Burada 'yüksekliği' yerine 'yükseklik' kullanılmalıydı
 
-# Pencere
+
 pencere = pygame.display.set_mode((genişlik, yükseklik))  # Buradaki 'yüksekliği' de düzeltildi
 pygame.display.set_caption("Yılan Oyunu")
 
-# Yılan ayarları
+
 yılan_blok = 10
 yılan_hız = 15
 
-# Saat
+
 saat = pygame.time.Clock()
 
-# Fontlar
 font_stil = pygame.font.SysFont("bahnschrift", 25)
 puan_font = pygame.font.SysFont("comicsansms", 35)
 
@@ -134,5 +132,4 @@ def oyun():
     pygame.quit()
     quit()
 
-# Oyunu başlat
 oyun()
